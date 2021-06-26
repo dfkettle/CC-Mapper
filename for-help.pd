@@ -1,0 +1,59 @@
+#N canvas 551 147 740 422 12;
+#X obj 39 264 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 39 363 print;
+#X obj 147 264 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 147 363 print;
+#X obj 147 305 for 3 0 -1.5;
+#X obj 39 305 for 0 3 1.5;
+#X obj 261 264 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 261 363 print;
+#X obj 369 264 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 369 363 print;
+#X obj 261 305 for 3 0 1.5;
+#X obj 369 305 for 0 3 -1.5;
+#X obj 483 264 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 483 363 print;
+#X obj 483 305 for 0 3 0;
+#X text 37 233 Loop 3 times:;
+#X text 143 233 Loop 3 times:;
+#X text 257 233 Loop 0 times:;
+#X text 367 233 Loop 0 times:;
+#X text 480 233 Loop 0 times:;
+#X obj 49 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 157 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 271 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 379 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 493 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 36 111 Creation arguments:;
+#X text 36 138 1 Initial value;
+#X text 36 158 2 Terminal value;
+#X text 36 178 3 Incremental or decremental value;
+#X text 37 10 For loop - may increment or decrement (inclusive start
+and end values);
+#X text 36 50 Checks for non-terminating creation arguments and does
+nothing if non-terminating;
+#X connect 0 0 5 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 4 0 21 0;
+#X connect 5 0 1 0;
+#X connect 5 0 20 0;
+#X connect 6 0 10 0;
+#X connect 8 0 11 0;
+#X connect 10 0 7 0;
+#X connect 10 0 22 0;
+#X connect 11 0 9 0;
+#X connect 11 0 23 0;
+#X connect 12 0 14 0;
+#X connect 14 0 13 0;
+#X connect 14 0 24 0;

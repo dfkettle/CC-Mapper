@@ -1,0 +1,25 @@
+#N canvas 683 304 506 190 12;
+#X obj 10 10 cnv 15 40 16 empty empty empty 20 12 0 14 -204800 -66577
+0;
+#X obj 10 10 nbx 3 16 0 127 0 0 \$0-get \$0-set empty 0 -8 0 10 -257985
+-1 -1 21 256;
+#X obj 74 115 send \$0-set;
+#X obj 269 13 receive \$0-get;
+#X obj 74 48 route float bang;
+#X obj 183 115 print [nbox] Unrecognized input;
+#X obj 74 14 receive CC-\$1-\$2-set;
+#X obj 42 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 128 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 237 48 3 0 0 0 - - -;
+#X obj 269 48 send CC-xlate-out;
+#X connect 3 0 9 0;
+#X connect 3 0 10 0;
+#X connect 4 0 2 0;
+#X connect 4 0 7 0;
+#X connect 4 1 8 0;
+#X connect 4 1 2 0;
+#X connect 4 2 5 0;
+#X connect 6 0 4 0;
+#X coords 0 -1 1 1 40 16 2 10 10;
